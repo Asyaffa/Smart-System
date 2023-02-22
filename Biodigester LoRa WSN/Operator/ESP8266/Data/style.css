@@ -1,0 +1,105 @@
+/*
+    Written by Aqilla Rahman Musyaffa
+*/
+
+html 
+{
+	font-family: Arial, Helvetica, sans-serif; 
+	display: inline-block; 
+	text-align: center;
+}
+h1 
+{
+	font-size: 1.3rem; 
+	color: white;
+}
+p 
+{ 
+	font-size: 1.5rem;
+}
+
+.tab
+{
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	text-align: center;
+}	
+
+.tab button
+{
+	background-color: inherit;
+	display: inline-block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 10px;
+	transition: 0.3s;
+	text-align: center;
+	font-size: 1.3rem;
+}	
+
+.tab button:hover 
+{
+	background-color: #ddd;
+}
+
+.tab button.active 
+{
+	background-color: #ccc;
+}
+
+.tabcontent 
+{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.topnav 
+{ 
+	overflow: hidden; 
+	background-color: #510042;
+}
+body 
+{  
+	margin: 0;
+	background-image: url("ugtp.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+.content 
+{ 
+	padding: 1%;
+}	
+.card-grid-1
+{ 
+	max-width: 1000px; 
+	margin: 0 auto; 
+	display: grid; 
+	grid-gap: 1rem; 
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card-grid-2
+{ 
+	max-width: 490px; 
+	margin: 0 auto; 
+	display: grid; 
+	grid-gap: 1rem; 
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card 
+{ 
+	background-color: white;
+	border-radius: 20px;
+	transition: 0.3s;	
+	box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+.card-title 
+{ 
+	font-size: 1rem;
+	font-weight: bold;
+	color: #510042;
+}

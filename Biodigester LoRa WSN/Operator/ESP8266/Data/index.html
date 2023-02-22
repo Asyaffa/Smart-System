@@ -1,0 +1,298 @@
+/*
+    Written by Aqilla Rahman Musyaffa
+*/
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BIODIGESTER NETWORK</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<link rel = "icon" type = "image/png" href="favicon.png">
+		<link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity = "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin = "anonymous">
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<!-- 
+			<script src = "http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+		-->
+		<script src = "gauge.min.js"></script>
+	</head>
+	<body>
+		<div class = "bg"></div>
+		
+		<div class = "topnav">
+			<h1>Sistem Monitor Terpadu Biodigester UG Technopark</h1>
+		</div>
+		
+		<div class = "tab">
+			<button class = "tablinks"
+				onclick = "openBio(event, 'BIO-1')">BIO-1
+			</button>
+			
+			<button class = "tablinks"
+				onclick = "openBio(event, 'BIO-2')">BIO-2
+			</button>
+			
+			<button class = "tablinks"
+				onclick = "openBio(event, 'BIO-3')">BIO-3
+			</button>
+			
+			<button class = "tablinks"
+				onclick = "openBio(event, 'BIO-4')">BIO-4
+			</button>
+			
+			<button class = "tablinks"
+				onclick = "openBio(event, 'BIO-5')">BIO-5
+			</button>
+		</div>
+		
+		<div id = "BIO-1" class = "tabcontent">		
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Temperatur Tangki 1</p>
+						<canvas id = "b1-gauge-temperature"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 1</p>
+						<canvas id = "b1-gauge-pressure"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">pH Tangki 1</p>
+						<canvas id = "b1-gauge-pH"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Level Limbah Tangki 1</p>
+						<canvas id = "b1-gauge-level"></canvas>
+					</div>
+				</div>
+			</div>
+		
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Karbon Dioksida Tangki 1</p>
+						<canvas id = "b1-gauge-carbon"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Metana Tangki 1</p>
+						<canvas id = "b1-gauge-methane"></canvas>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 2</p>
+						<canvas id = "b1-gauge-pressure-2"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Volume Gas Tangki 2</p>
+						<canvas id = "b1-gauge-volume"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "BIO-2" class = "tabcontent">		
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Temperatur Tangki 1</p>
+						<canvas id = "b2-gauge-temperature"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 1</p>
+						<canvas id = "b2-gauge-pressure"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">pH Tangki 1</p>
+						<canvas id = "b2-gauge-pH"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Level Limbah Tangki 1</p>
+						<canvas id = "b2-gauge-level"></canvas>
+					</div>
+				</div>
+			</div>
+		
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Karbon Dioksida Tangki 1</p>
+						<canvas id = "b2-gauge-carbon"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Metana Tangki 1</p>
+						<canvas id = "b2-gauge-methane"></canvas>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 2</p>
+						<canvas id = "b2-gauge-pressure-2"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Volume Gas Tangki 2</p>
+						<canvas id = "b2-gauge-volume"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "BIO-3" class = "tabcontent">		
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Temperatur Tangki 1</p>
+						<canvas id = "b3-gauge-temperature"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 1</p>
+						<canvas id = "b3-gauge-pressure"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">pH Tangki 1</p>
+						<canvas id = "b3-gauge-pH"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Level Limbah Tangki 1</p>
+						<canvas id = "b3-gauge-level"></canvas>
+					</div>
+				</div>
+			</div>
+		
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Karbon Dioksida Tangki 1</p>
+						<canvas id = "b3-gauge-carbon"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Metana Tangki 1</p>
+						<canvas id = "b3-gauge-methane"></canvas>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 2</p>
+						<canvas id = "b3-gauge-pressure-2"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Volume Gas Tangki 2</p>
+						<canvas id = "b3-gauge-volume"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "BIO-4" class = "tabcontent">		
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Temperatur Tangki 1</p>
+						<canvas id = "b4-gauge-temperature"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 1</p>
+						<canvas id = "b4-gauge-pressure"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">pH Tangki 1</p>
+						<canvas id = "b4-gauge-pH"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Level Limbah Tangki 1</p>
+						<canvas id = "b4-gauge-level"></canvas>
+					</div>
+				</div>
+			</div>
+		
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Karbon Dioksida Tangki 1</p>
+						<canvas id = "b4-gauge-carbon"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Metana Tangki 1</p>
+						<canvas id = "b4-gauge-methane"></canvas>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 2</p>
+						<canvas id = "b4-gauge-pressure-2"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Volume Gas Tangki 2</p>
+						<canvas id = "b4-gauge-volume"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "BIO-5" class = "tabcontent">		
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Temperatur Tangki 1</p>
+						<canvas id = "b5-gauge-temperature"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 1</p>
+						<canvas id = "b5-gauge-pressure"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">pH Tangki 1</p>
+						<canvas id = "b5-gauge-pH"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Level Limbah Tangki 1</p>
+						<canvas id = "b5-gauge-level"></canvas>
+					</div>
+				</div>
+			</div>
+		
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Karbon Dioksida Tangki 1</p>
+						<canvas id = "b5-gauge-carbon"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Metana Tangki 1</p>
+						<canvas id = "b5-gauge-methane"></canvas>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "content">
+				<div class = "card-grid-1">
+					<div class = "card">
+						<p class = "card-title">Tekanan Tangki 2</p>
+						<canvas id = "b5-gauge-pressure-2"></canvas>
+					</div>
+					<div class = "card">
+						<p class = "card-title">Volume Gas Tangki 2</p>
+						<canvas id = "b5-gauge-volume"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src = "script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BIODIGESTER DASHBOARD</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- 
+			<script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+		-->
+		<script src="gauge.min.js"></script>
+	</head>
+	<body>
+		<div class="topnav">
+			<h1>BIODIGESTER MONITORING SYSTEM</h1>
+		</div>
+		
+		<div class="content">
+			<div class="card-grid-1">
+				<div class="card">
+					<p class="card-title">Temperatur Tangki 1</p>
+					<canvas id="gauge-temperature"></canvas>
+				</div>
+				<div class="card">
+					<p class="card-title">Tekanan Tangki 1</p>
+					<canvas id="gauge-pressure"></canvas>
+				</div>
+				<div class="card">
+					<p class="card-title">pH Tangki 1</p>
+					<canvas id="gauge-pH"></canvas>
+				</div>
+				<div class="card">
+					<p class="card-title">Level Limbah Tangki 1</p>
+						<canvas id="gauge-level"></canvas>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="card-grid-2">
+				<div class="card">
+					<p class="card-title">Tekanan Tangki 2</p>
+					<canvas id="gauge-pressure-2"></canvas>
+				</div>
+				<div class="card">
+					<p class="card-title">Aliran Gas Tangki 2</p>
+					<canvas id="gauge-flow"></canvas>
+				</div>
+			</div>
+		</div>	
+		<script src="script.js"></script>
+	</body>
+</html>
